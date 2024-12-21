@@ -10,8 +10,10 @@ Follow these steps to set up the project locally:
 1. Download the Code:
 	- Download the ZIP file of the project from the repository.
 	- Extract the ZIP file to a folder of your choice.
+
 2. Open the Code in VS Code:
 	- Open the extracted folder in Visual Studio Code or your preferred code editor.
+
 3. Install Dependencies:
 	- Open the terminal in VS Code (Terminal > New Terminal) or use your system’s terminal.
 	- Navigate to the project folder if not already there.
@@ -19,16 +21,19 @@ Follow these steps to set up the project locally:
 		```python
 		npm install
 		```
+
 4. Start the Server:
 	- Run the following command to start the application:
 		```python
 		node server.js
 		```
+
 5. Access the Web Application:
 	- Open a browser (preferably Firefox) and go to:
 		```python
 		http://localhost:5000/
 		```
+
 
 ## Features
 - Gamified learning modules.
