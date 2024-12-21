@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEdu | Introduction to Cybersecurity</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Cybersecurity 101: Keepin' Your Digital World Safe</h1>
+                <p>Get the lowdown on cybersecurity basics and learn how to stay safe online.</p>
+            </div>
+        </section>
+        <div class="module-content" data-module-slug="intro-to-cyber">
+            <div class="login-prompt-container"></div>
+            <section id="understanding-cybersecurity">
+                <h2>Understanding Cybersecurity</h2>
+
+                <h3>What is Cybersecurity?</h3>
+                <ul>
+                    <li><strong>Cybersecurity 101:</strong> Think of cybersecurity like a digital bodyguard. It's all about protecting your devices and data from online baddies who want to mess with your stuff.</li>
+                    <li><strong>Why it Matters:</strong> In today's digital age, nearly everything we do is online. From social media to online banking, cybersecurity protects our personal information and ensures our digital activities are secure.</li>
+                </ul>
+                <br>
+                <h3>Common Threats:</h3>
+                <ul>
+                    <li><strong>Phishing:</strong> Imagine getting a DM from someone pretending to be your fave celeb, asking for your password. That's phishing—tricking you into giving up your info.</li>
+                    <li><strong>Malware:</strong> This is nasty software that can wreck your computer or phone. It's like catching a virus IRL, but for your tech.</li>
+                    <li><strong>Identity Theft:</strong> Picture someone stealing your identity and buying stuff with your money. Scary, right? That's why keeping your info safe is a big deal.</li>
+                </ul>
+            </section>
+            
+            <section id="online-safety-practices">
+                <h2>Basic Online Safety Practices</h2>
+                <h3>Creating Strong Passwords:</h3>
+                <ul>
+                    <li><strong>Mix It Up:</strong> Use a mix of uppercase letters, lowercase letters, numbers, and symbols. Think "P@ssw0rd!" instead of "password123".</li>
+                    <li><strong>Avoid the Obvious:</strong> No pet names or birthdays—those are too easy to guess.</li>
+                    <li><strong>Longer is Better:</strong> Go for at least 8 characters. The longer, the better!</li>
+                </ul>
+                <br>
+                <h3>Recognizing Safe Websites:</h3>
+                <ul>
+                    <li><strong>Check for HTTPS:</strong> Only trust sites that start with "https://". The "s" stands for secure, like a secret handshake.</li>
+                    <li><strong>Look for the Lock:</strong> A padlock icon in the address bar means the site is secure. No padlock? No deal!</li>
+                </ul>
+                <br>
+                <h3>Avoiding Suspicious Links and Emails:</h3>
+                <ul>
+                    <li><strong>Be Skeptical:</strong> If you get an unexpected email or message, especially asking for your info, think twice. If it smells fishy, it probably is.</li>
+                    <li><strong>Hover Before You Click:</strong> Hover over links to see where they lead before clicking. If it looks weird, don’t click!</li>
+                </ul>
+            </section>
+            
+            <section id="interactive-activities">
+                <h2>Interactive Activities</h2>
+                <div class="activity">
+                    <h3>Password Strength Checker</h3>
+                    <p>Enter passwords to see how strong they are. Get instant tips on making them stronger. It's like a gym for your passwords!</p>
+                    <input type="text" id="password-input" placeholder="Enter a password" maxlength="50">
+                    <button onclick="checkPasswordStrength()">Check Strength</button>
+                    <p id="password-strength"></p>
+                </div>
+
+                <div class="activity" data-id="activity-spot-phish" data-difficulty="easy" data-total-questions="5">
+                    <h3>Spot the Phish</h3>
+                    <p>Check out some example emails and figure out if they're legit or phishing attempts. It's like being a digital detective!</p>
+                    <div id="spot-the-phish-container">
+                        <!-- Dynamic email examples will load here -->
+                    </div>
+                    <button onclick="checkSpotThePhishAnswers(this)">Submit Answers</button>
+                    <p id="phish-result"></p>                    
+                </div>
+
+                <div class="activity" id="activity-intro-quiz" data-id="activity-intro-quiz" style="margin-bottom: 0px;"  data-difficulty="easy" data-total-questions="3">
+                    <h3>Online Safety Quiz</h3>
+                    <p style="text-align: left;">Test your knowledge with a fun quiz. See how much you've learned about staying safe online.</p>
+                    <div id="quiz-container">
+                        <!-- Dynamic quiz questions will load here -->
+                    </div>
+                    <button class="final-submit" onclick="checkIntroQuizAnswers(this)">Submit Answers</button>
+                    <p id="quiz-result"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/script.js"></script>
+</body>
+</html>

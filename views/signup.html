@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEdu | Sign Up</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Sign Up</h1>
+            </div>
+        </section>
+        <section class="signup-section">
+            <div class="signup-container">
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-as" style="padding-top: 16px;">Sign-up as:</label>
+                        <select id="signup-as" name="signUpAs" onchange="toggleRoleFields()">
+                            <option value="learner">Learner</option>
+                            <option value="tutor">Tutor</option>
+                        </select>
+                    </div>
+                    <div class="form-group learner-only">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" maxlength="20">
+                    </div>
+
+                    <div class="form-group learner-only" style="margin-bottom: 8px;">
+                        <label for="age-group">Age Group:</label>
+                        <select id="age-group" name="ageGroup" disabled>
+                            <option value="10-13">10 - 13</option>
+                            <option value="14-16">14 - 16</option>
+                            <option value="17-19">17 - 19</option>
+                            <option value="20+">20+</option>
+                            <option value="30+">30+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group learner-only consent-group" style="margin-bottom: 32px;">
+                        <input type="checkbox" id="consent-checkbox">
+                        <label for="consent-checkbox" class="consent-label" style="margin-bottom: 4px;">I consent to share my scores for performance comparison.</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <div class="input-group">
+                            <input type="password" id="password" class="form-control" name="password" oninput="checkUserPasswordStrength()" required>
+                            <button type="button" id="togglePassword" class="toggle" aria-label="Toggle password visibility">
+                                <i id="eyeIcon" class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                        <small id="password-tips"><strong>Password must be:</strong><br>At least 8 characters long<br>Contain 1 uppercase letter, 1 number, and 1 special character.</small>
+                        <div id="password-strength"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="consent" style="font-weight: normal;">By signing up you agree to our <a href="/privacy-policy.html">Privacy Policy</a> and terms of service.</label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already a user? <a href="/login.html">Login</a></p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="/script.js"></script>
+</body>
+</html>

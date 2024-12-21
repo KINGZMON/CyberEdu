@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEdu | Dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Dashboard</h1>
+            </div>
+        </section>
+        <section class="dashboard-section">
+            <div class="dashboard-container">
+                <h2>Welcome, <span id="username" style="color: #c237f9;">[Username]</span>!</h2>
+                <div class="dashboard-content">
+                    <div class="dashboard-item">
+                        <h3>Points Scored</h3>
+                        <p id="points-scored" style="color: #c237f9; font-weight: bold;">0</p>
+                    </div>
+                    <div class="dashboard-item">
+                        <h3>Modules Answered</h3>
+                        <ul id="modules-answered">
+                            <!-- Filled dynamically -->
+                        </ul>
+                    </div>
+                    <div class="dashboard-item">
+                        <h3>Recommended Modules</h3>
+                        <ul id="recommended-modules">
+                            <!-- Filled dynamically -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEdu | Manage Account</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Account Management</h1>
+            </div>
+        </section>
+
+        <section class="account-section">
+            <div class="account-container">
+                
+                <!-- General Information Section -->
+                <div class="account-info">
+                    <h2>General Information</h2>
+                    <form id="general-info-form">
+                        <label for="username" id="username-label">Username:</label>
+                        <input type="text" id="username" name="username" maxlength="20" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" maxlength="50" required>
+
+                        <button type="button" id="update-info-btn">Update Information</button>
+                    </form>
+                </div>
+        
+                <!-- Reset Password Section -->
+                <div class="reset-password">
+                    <h2>Reset Password</h2>
+                    <form id="password-form">
+                        <!-- Current Password -->
+                        <label for="current-password">Current Password:</label>
+                        <div class="input-group">
+                            <input type="password" id="current-password" name="current-password" required>
+                            <button type="button" id="togglePasswordCurrent" class="toggle" aria-label="Toggle password visibility">
+                                <i id="eyeIconCurrent" class="fa fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <!-- New Password -->
+                        <label for="new-password">New Password:</label>
+                        <div class="input-group" style="padding-bottom: 20px;">
+                            <input type="password" id="new-password" name="new-password" oninput="checkUserPasswordStrength()" required>
+                            <button type="button" id="togglePasswordNew" class="toggle" aria-label="Toggle password visibility">
+                                <i id="eyeIconNew" class="fa fa-eye"></i>
+                            </button>
+                            <small id="password-tips"><strong>Password must be:</strong><br>At least 8 characters long<br>Contain 1 uppercase letter, 1 number, and 1 special character.</small>
+                        <div id="password-strength"></div>
+                        </div>
+                        
+                        <!-- Confirm New Password -->
+                        <label for="confirm-password">Confirm New Password:</label>
+                        <div class="input-group">
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                            <button type="button" id="togglePasswordConfirm" class="toggle" aria-label="Toggle password visibility">
+                                <i id="eyeIconConfirm" class="fa fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <button type="button" id="reset-password-btn">Change Password</button>
+                    </form>
+                </div>                
+                
+        
+                <!-- Delete Account -->
+                <div class="delete-account">
+                    <h2>Delete Account</h2>
+                    <p class="warning">Warning: This action cannot be undone.</p>
+                    <button type="button" id="delete-account-btn">Delete Account</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer></footer>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEdu | Network Security Basics</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Network Security: Your Digital Bouncer</h1>
+                <p>Discover the secrets of network security and learn how to keep your digital world safe from online troublemakers.</p>
+            </div>
+        </section>
+        <div class="module-content" data-module-slug="network-basics">
+            <div class="login-prompt-container"></div>
+            <section id="understanding-network-security">
+                <h2>Understanding Network Security</h2>
+                <h3>What is Network Security?</h3>
+                <p>Network security is like having a high-tech bouncer at the entrance of your digital world. It ensures only the right people get in and keeps out the online troublemakers.</p>
+                <h3>How Networks Work:</h3><p>Think of a network as a group chat. It's a bunch of devices (phones, laptops, tablets) all talking to each other. Just like in a group chat, you don't want strangers popping in!</p>
+                <h3>Why it Matters:</h3>
+                <p>You're gaming online, streaming your favourite shows, or just surfing the web. Network security makes sure nobody can snoop on what you're doing or steal your data.</p>
+            </section>
+
+            <section id="common-network-threats">
+                <h2>Common Network Threats</h2>
+                <ul>
+                    <li><strong>Hackers and Cyber Attacks:</strong> Imagine someone trying to break into your house. Hackers do the same thing but with your network. They use sneaky ways to get in and mess with your stuff.</li>
+                    <li><strong>DDoS Attacks:</strong> This is like when everyone tries to use the school Wi-Fi at once and it crashes. Hackers overload a website or service to take it down.</li>
+                    <li><strong>Man-in-the-Middle Attacks:</strong> Picture this: you're passing notes in class, and someone intercepts them. A man-in-the-middle attack is when a hacker intercepts data being sent between two devices.</li>
+                </ul>
+            </section>
+
+            <section id="securing-your-network">
+                <h2>Securing Your Network</h2>
+                <ul>
+                    <li><strong>Wi-Fi Security:</strong>
+                        <ul>
+                            <li><strong>Strong Passwords:</strong> Use complex passwords for your Wi-Fi. "123456" is a no-go! Think "H@ckTh!s123" instead.</li>
+                            <li><strong>WPA3 Encryption:</strong> Ensure your Wi-Fi is using WPA3 encryption. It's like having a super-strong lock on your digital door.</li>
+                            <li><strong>Guest Networks:</strong> Set up a guest network for visitors to keep your main network more secure.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Firewalls:</strong> Firewalls are like digital bodyguards. They monitor incoming and outgoing traffic and block anything suspicious.</li>
+                    <li><strong>VPNs (Virtual Private Networks):</strong> Using a VPN is like wearing a disguise online. It hides your IP address and encrypts your data, making it harder for hackers to track you.</li>
+                </ul>
+            </section>
+
+            <section id="recognising-network-security-risks">
+                <h2>Recognising Network Security Risks</h2>
+                <ul>
+                    <li><strong>Unsecured Networks:</strong> Be wary of public Wi-Fi, like the one at your favourite café. Hackers can easily access these networks.</li>
+                    <li><strong>Suspicious Activity:</strong> If your internet slows down for no reason, or you see strange devices connected to your network, it might be compromised.</li>
+                    <li><strong>Phishing on Networks:</strong> Just like email phishing, you can get tricked through network messages. Always verify before clicking links or providing info.</li>
+                </ul>
+            </section>
+
+            <section id="interactive-activities">
+                <h2>Interactive Activities</h2>
+                <div class="activity" data-id="activity-risk-mini-game"  data-difficulty="medium" data-total-questions="5">
+                    <h3>Identify the Risk Mini-Game</h3>
+                    <p>Check out these scenarios and figure out if they're risky or safe. It's like being a network security expert!</p>
+                    
+                    <div id="risk-minigame-container">
+                        <!-- Dynamic risk scenarios will load here -->
+                    </div>
+                    
+                    <button onclick="checkRiskMiniGameAnswers(this)">Submit Answers</button>
+                    <p id="risk-result"></p>
+                </div>                
+
+                <div class="activity">
+                    <h3>Wi-Fi Setup Simulator</h3>
+                    <p>Practice setting up a secure Wi-Fi network with complex passwords, enabling encryption, and creating guest networks.</p>
+                    <div class="wifi-simulator">
+                        <label for="wifi-name"><strong>Wi-Fi Name (SSID):</strong></label>
+                        <input type="text" id="wifi-name" maxlength="32">
+                        
+                        <label for="wifi-password"><strong>Password:</strong></label>
+                        <input type="password" id="wifi-password" maxlength="32">
+                        
+                        <label for="wifi-encryption"><strong>Encryption:</strong></label>
+                        <select id="wifi-encryption">
+                            <option value="none">None</option>
+                            <option value="WEP">WEP</option>
+                            <option value="WPA2">WPA2</option>
+                            <option value="WPA3">WPA3</option>
+                        </select>
+                        
+                        <label for="wifi-guest"><strong>Guest Network:</strong></label>
+                        <input type="checkbox" id="wifi-guest">
+                    </div>
+                    <button onclick="checkWiFiSetup()">Check Setup</button>
+                    <p id="wifi-setup-result"></p>
+                </div>
+
+                <div class="activity" id="activity-network-basics-quiz" data-id="activity-network-basics-quiz" style="margin-bottom: 0px;" data-difficulty="medium" data-total-questions="5">
+                    <h3>Network Security Quiz</h3>
+                    <p>Test your knowledge with a fun quiz about what you've learned. Earn points for correct answers!</p>
+                    <div id="quiz-container">
+                        <!-- Dynamic quiz questions will load here -->
+                    </div>
+                    <button class="final-submit" onclick="checkNetworkBasicsQuizAnswers(this)">Submit Answers</button>
+                    <p id="quiz-result"></p>
+                </div>                
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/script.js"></script>
+</body>
+</html>

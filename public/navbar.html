@@ -1,0 +1,25 @@
+<header>
+    <a href="/" class="logo-link" style="text-decoration: none; color: var(--soft-white);">
+        <div class="logo">CyberEdu</div>
+    </a>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav>
+        <div class="close-icon" onclick="toggleMenu()">&times;</div>
+        <ul id="nav-links">
+            <li id="home-link"><a href="/">Home</a></li>
+            <li><a href="/search-modules.html">Modules</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/leaderboard.html">Leaderboard</a></li>
+            <li id="login-link"><a href="/login.html">Login</a></li>
+            <li id="signup-link"><a href="/signup.html"><button>Join for FREE</button></a></li>
+            <li id="dashboard-link" style="display: none;"><a id="dashboard-nav" href="#">Dashboard</a></li>
+            <li id="account-link" style="display: none;"><a id="account-nav" href="/manage-account.html">Account</a></li>
+            <li id="logout-link" style="display: none;">
+                <button id="logout-btn">
+                    <img src="/images/logout.svg" width="24" height="24" style="vertical-align: middle; margin-right: 4px">
+                    Logout
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
