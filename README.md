@@ -16,19 +16,19 @@ Follow these steps to set up the project locally:
 	- Open the terminal in VS Code (Terminal > New Terminal) or use your system’s terminal.
 	- Navigate to the project folder if not already there.
 	- Run the following command to install the required dependencies:
-```python
-npm install
-```
+	```python
+	npm install
+	```
 4. Start the Server:
 	- Run the following command to start the application:
-```python
-node server.js
-```
+	```python
+	node server.js
+	```
 5. Access the Web Application:
 	- Open a browser (preferably Firefox) and go to:
-```python
-http://localhost:5000/
-```
+	```python
+	http://localhost:5000/
+	```
 
 ## Features
 - Gamified learning modules.
